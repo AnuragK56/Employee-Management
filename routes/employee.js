@@ -69,9 +69,15 @@ router.get("/:id", function (req, res) {
 
 });
 //===Edit employee===//
+
 router.get("/:id/edit",middleware.checkemployeeOwnership, function (req, res) {
     employee.findById(req.params.id, function (err, foundemployee) {
-                res.render("employee/edit", { employee: foundemployee });
+        if(err){
+            req.flash("error","You need to be logged in to do that!");
+        }
+    else{
+          res.render("employee/edit", { employee: foundemployee });
+    }
                });
 });
 router.put("/:id",middleware.checkemployeeOwnership,function(req,res){
@@ -81,10 +87,8 @@ router.put("/:id",middleware.checkemployeeOwnership,function(req,res){
         }else{
             res.redirect("/employee/"+req.params.id);
         }
-        
        });
 })
-
 
 //===Delete employee===//
 router.delete("/:id",middleware.checkemployeeOwnership, function (req, res) {

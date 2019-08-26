@@ -25,7 +25,7 @@
             </ul>
 
             <% if(currentUser && employee.author.id.equals(currentUser._id)){ %>
-            <div class="container">
+            <div >
                 <a class="btn btn-warning" href="/employee/<%= employee._id %>/edit">Edit</a>
                 <form id="delete-form" action="/employee/<%= employee._id %>?_method=DELETE" method="POST">
                     <button class="btn btn-danger">Delete</button>

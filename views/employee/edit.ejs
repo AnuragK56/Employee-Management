@@ -4,26 +4,26 @@
 <div class="row">
 <h1  id="Title"  style="text-align: center;">Edit Employee Details</h1>
 <div style="width: 30%;margin-top: 20px;margin-bottom: 20px;margin:auto;">
-<form action="/employee" method="POST">
+<form action="/employee/<%= employee._id %>?_method=PUT" method="POST">
     <div class="form-group">
         <label id="subtitle">Name</label>
-    <input class="form-control" type="text" name="name""  value="<%= employee.name%>">
+    <input class="form-control" type="text" name="employee[name]"  value="<%= employee.name%>">
 </div>
 <div class="form-group">
     <label id="subtitle">Phone number</label>
-    <input class="form-control" type="number" name="PhoneNumber"  value="<%= employee.PhoneNumber%>" >
+    <input class="form-control" type="number" name="employee[PhoneNumber]" minlength="10" maxlength="10"  pattern="[1-9]{1}[0-9]{9}" value="<%= employee.PhoneNumber%>" >
 </div>
 <div class="form-group">
         <label id="subtitle">Age</label>
-    <input class="form-control" type="number" name="age"  value="<%= employee.age%>">
+    <input class="form-control" type="number" name="employee[age]"   minlength="1" maxlength="2"  pattern="[0-9]{2}" value="<%= employee.age%>">
 </div>
 <div class="form-group">
         <label id="subtitle">Location</label>
-    <input class="form-control" type="text" name="Location" value="<%= employee.Location%>">
+    <input class="form-control" type="text" name="employee[Location]" value="<%= employee.Location%>">
 </div>
 <div class="form-group">
     <label id="subtitle">Position</label>
-<input class="form-control" type="text" name="position" value="<%= employee.position%>">
+<input class="form-control" type="text" name="employee[position]" value="<%= employee.position%>">
 </div>
     <div class="form-group">
     <button class="btn btn-large btn-primary btn-block" type="submit">Submit!</button>
