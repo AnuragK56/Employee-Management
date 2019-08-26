@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+<div class="container">
+<div class="row">
+<h1  id="Title"  style="text-align: center;">Sign Up</h1>
+<div style="width: 30%;margin-top: 20px;margin-bottom: 20px;margin:auto;">
+<form action="/register" method="POST">
+    <div class="form-group">
+        <label id="subtitle">Username</label>
+    <input class="form-control" type="text" name="username">
+</div>
+    <div class="form-group">
+        <label id="subtitle">Password</label>
+    <input class="form-control" type="password" name="password">
+</div>
+    <div class="form-group">
+    <button class="btn btn-large btn-primary btn-block" type="submit">Sign Up!</button>
+</div>
+</form>
+<a href="/employee">GO BACK</a>
+</div>
+</div>
+</div>
+<% include partials/footer.ejs %>

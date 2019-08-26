@@ -1,0 +1,40 @@
+<% include ../partials/header%>
+<div class="container" align="center">
+    <div class="col-md">
+
+        <div style="padding: 5%" class="caption-full">
+
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">
+                    <h1 align="center" id="elementli"> Employee name: <%=  employee.name %> </h1>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <h1 align="center" id="elementli"> Position: <%=  employee.position %> </h1>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <h1 align="center" id="elementli"> Age: <%=  employee.age %> </h1>
+                </li>
+                <li class="list-group-item list-group-item-danger">
+                    <h1 align="center" id="elementli"><i class="fas fa-phone-square-alt"></i> PhoneNumber:
+                        <%=  employee.PhoneNumber %> </h1>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <h1 align="center" id="elementli"> <i class="fas fa-map-marker-alt"></i> Location:
+                        <%=  employee.Location%> </h1>
+                </li>
+            </ul>
+
+            <% if(currentUser && employee.author.id.equals(currentUser._id)){ %>
+            <div class="container">
+                <a class="btn btn-warning" href="/employee/<%= employee._id %>/edit">Edit</a>
+                <form id="delete-form" action="/employee/<%= employee._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger">Delete</button>
+            </div>
+            </form>
+            <% } %>
+
+        </div>
+    </div>
+
+</div>
+<% include ../partials/footer%>

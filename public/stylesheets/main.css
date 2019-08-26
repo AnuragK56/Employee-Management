@@ -1,0 +1,63 @@
+.thumbnail img{
+    width:100%;
+}
+
+
+.thumbnail{
+    padding: 0; 
+}
+.thumbnail .caption-full{
+    padding: 9px;
+
+}
+#delete-form{
+    display: inline; 
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: aliceblue;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  body {
+    background-image: url("image.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+#Landing{
+    background-color: aqua;
+    background-image: url("BACKGROUND.jpg");
+}
+  
+#Title{
+    font-size: 400%;
+    padding: 2%;
+    color:white;
+}
+#subtitle{
+font-size: 120%;
+}
+#elementli{
+    padding: 2%;
+    
+}
+#HEAD{
+    font-size: 400%;
+    padding-top: 10%;
+    color:rgb(233, 217, 217);
+}
+#subhead{
+    font-size: 200%;
+    padding-top: 10%;
+    color:rgb(233, 217, 217);
+}

@@ -1,0 +1,40 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container-fluid">
+            <h2>Welcome to Employee Management System!</h2>
+            <p>Employee Management system is a great way to store and edit the details of employee</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/employee/new">Add New employee</a>
+            </p>
+        </div>
+    </header>
+
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% employee.forEach(function(employee){ %>
+        <div class="col-md-3 col-sm-6">
+
+                <div class="card" style="width: 25rem; padding: 5%">
+
+                    <div class="card-body">
+                        <h1  class="card-title"><%= employee.name %></h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-user">&nbsp;</span>  <strong>Age:</strong>&nbsp; <%= employee.age %></li>
+                        <li class="list-group-item"> <span class="glyphicon glyphicon-lock">&nbsp;</span> <strong>Position:</strong> &nbsp;<%= employee.position %></li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-earphone">&nbsp;</span> <strong>Number:</strong>&nbsp;<%= employee.PhoneNumber %></li>
+                    </ul>
+                    <div class="card-body" >
+                        <a href="/employee/<%= employee._id %>" class="btn btn btn-success ">Read More</a>
+                    </div>
+                  
+                </div>
+
+
+        </div>
+        <% }) %>
+    </div>
+
+    <% include ../partials/footer %>
+</div>

@@ -1,0 +1,36 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+<div class="row">
+<h1  id="Title" style="text-align: center;">Enter Employee Details</h1>
+<div style="width: 30%;margin-top: 20px;margin-bottom: 20px;margin:auto;">
+<form action="/employee" method="POST">
+    <div class="form-group">
+        <label id="subtitle">Name</label>
+    <input class="form-control" type="text" name="name" >
+</div>
+<div class="form-group">
+    <label id="subtitle">Phone number</label>
+    <input class="form-control" type="text" name="PhoneNumber" minlength="10" maxlength="10"  pattern="[1-9]{1}[0-9]{9}" >
+</div>
+<div class="form-group">
+        <label id="subtitle">Age</label>
+    <input class="form-control" type="text" name="age" minlength="1" maxlength="2"  pattern="[0-9]{2}">
+</div>
+<div class="form-group">
+        <label id="subtitle">Location</label>
+    <input class="form-control" type="text" name="Location">
+</div>
+<div class="form-group">
+    <label id="subtitle">Position</label>
+<input class="form-control" type="text" name="position">
+</div>
+    <div class="form-group">
+    <button class="btn btn-large btn-primary btn-block" type="submit">Submit!</button>
+</div>
+
+</form>
+<a href="/employee">GO BACK</a>
+</div>
+</div>
+</div>
+<% include ../partials/footer.ejs %>
