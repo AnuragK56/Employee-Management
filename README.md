@@ -32,5 +32,5 @@ Features of Employee-Management:
    ![unknown](Screenshots/Edit_page.PNG)
   
 
-    //===Work to be done==//
-    The show.ejs file which displays the particular employee details requires a redesign .Might Update in upcoming days,weeks :)
+   #### Work to be done
+   The show.ejs file which displays the particular employee details requires a redesign .Might Update in upcoming days,weeks :)
