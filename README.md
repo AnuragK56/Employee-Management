@@ -16,5 +16,5 @@ Features of Employee-Management:
    ![unknown](Screenshots/Edit_page.PNG)
   
 
-    
-    P.S:The show.ejs file which displays the particular employee  details isn't styled properly cause I didnt had any idea.So it is little messy.Might Update in upcoming days,weeks :)
+    //===Work to be done==//
+    The show.ejs file which displays the particular employee details requires a redesign .Might Update in upcoming days,weeks :)
