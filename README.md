@@ -8,6 +8,16 @@ Features of Employee-Management:
     3. Passport and passport local are used to  take care of login and signup stuff
     4. Tried keeping design minimal for user to easily navigate through Website.
    
+### To Run the code
+
+    1. Clone the Repository
+    2. In console `npm install express`  
+    3. In console `node app.js`
+    4. Open Browser and enter url  `http://localhost:3000/`
+
+   
+   
+   
    //===SCREENSHOTS==//
    ![unknown](Screenshots/Capture.PNG)
    ![unknown](Screenshots/Index_page.PNG)
