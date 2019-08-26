@@ -6,16 +6,15 @@ Features of Employee-Management:
     2.The user who created the profile can only edit and delete and no one else.
     3.Passport and passport local are used to  take care of login and signup stuff
     4.Tried keeping design minimal for user to easily navigate through Website.
-    
-   ![alt text](Screenshots/Add new employee.PNG)
-   ![alt text](Screenshots/Capture.PNG)
-   ![alt text](Screenshots/Edit page.PNG)
-   ![alt text](Screenshots/Index page.PNG)
-   ![alt text](Screenshots/Log In.PNG)
-   ![alt text](Screenshots/Signed as User.PNG)
    
-   
-   
-    
+   //===SCREENSHOTS==//
+   ![unknown](Screenshots/Capture.PNG)
+   ![unknown](Screenshots/Index_page.PNG)
+   ![unknown](Screenshots/Log_In.PNG)
+   ![unknown](Screenshots/Signed_as_User.PNG)
+   ![unknown](Screenshots/new_employee.PNG)
+   ![unknown](Screenshots/Edit_page.PNG)
+  
+
     
     P.S:The show.ejs file which displays the particular employee  details isn't styled properly cause I didnt had any idea.So it is little messy.Might Update in upcoming days,weeks :)
